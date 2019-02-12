@@ -10,8 +10,6 @@ import UIKit
 
 class CAEmitterLayerDemoViewController: UIViewController {
     
-    @IBOutlet weak var containerView: UIView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

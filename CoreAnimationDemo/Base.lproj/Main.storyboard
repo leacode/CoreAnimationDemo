@@ -1599,26 +1599,9 @@ layerView.layer.addSublayer(blueLayer)</string>
                     <view key="view" contentMode="scaleToFill" id="Xs2-Wa-s6P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmz-ub-oKb">
-                                <rect key="frame" x="67" y="119" width="241" height="182"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="182" id="mky-nm-8Cv"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Gmz-ub-oKb" firstAttribute="centerX" secondItem="Xs2-Wa-s6P" secondAttribute="centerX" id="3Ic-UM-Y8o"/>
-                            <constraint firstItem="Gmz-ub-oKb" firstAttribute="top" secondItem="L5Y-S1-6Or" secondAttribute="top" constant="55" id="Wwv-EU-WyA"/>
-                            <constraint firstItem="Gmz-ub-oKb" firstAttribute="leading" secondItem="L5Y-S1-6Or" secondAttribute="leading" constant="67" id="t68-Uk-euz"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="L5Y-S1-6Or"/>
                     </view>
-                    <connections>
-                        <outlet property="containerView" destination="Gmz-ub-oKb" id="bPM-gf-7f6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wd5-r6-gzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2543,7 +2526,20 @@ layerView.layer.addSublayer(blueLayer)</string>
                     <view key="view" contentMode="scaleToFill" id="WVR-jc-YTO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bD8-Pg-sHQ">
+                                <rect key="frame" x="16" y="78" width="29" height="23"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="goback:" destination="u2h-oE-teZ" eventType="touchUpInside" id="wMp-55-hx8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.38039215686274508" green="0.69411764705882351" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bD8-Pg-sHQ" firstAttribute="top" secondItem="2qc-5U-2hc" secondAttribute="top" constant="14" id="W6p-Zs-IL9"/>
+                            <constraint firstItem="bD8-Pg-sHQ" firstAttribute="leading" secondItem="WVR-jc-YTO" secondAttribute="leadingMargin" id="WZv-nu-DNd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2qc-5U-2hc"/>
                     </view>
                 </viewController>
@@ -2553,6 +2549,7 @@ layerView.layer.addSublayer(blueLayer)</string>
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="29" height="23"/>
         <image name="clock" width="288" height="288"/>
         <image name="hour_arrow" width="9" height="59"/>
         <image name="minute_arrow" width="15" height="109"/>

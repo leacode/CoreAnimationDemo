@@ -34,6 +34,11 @@ class FallingPigsViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    @IBAction func goback(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 
     /*
     // MARK: - Navigation
