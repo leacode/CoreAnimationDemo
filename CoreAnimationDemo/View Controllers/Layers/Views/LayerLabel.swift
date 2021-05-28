@@ -37,19 +37,19 @@ class LayerLabel: UILabel {
         self.layer.display()
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        setup()
+//    }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-    
-    override func awakeFromNib() {
-        setup()
-    }
+//    required init?(coder: NSCoder) {
+//        super.init(coder: coder)
+//        setup()
+//    }
+//
+//    override func awakeFromNib() {
+//        setup()
+//    }
     
     override var text: String? {
         set {
